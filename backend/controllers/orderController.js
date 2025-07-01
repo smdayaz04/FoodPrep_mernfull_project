@@ -3,7 +3,7 @@ const userModel = require('../models/userModel');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-  const frontend_url = 'https://foodprepuser-m0h9.onrender.com';
+  const frontend_url = 'https://foodprep-mernfull-project.onrender.com';
 
   try {
     const newOrder = await orderModel.create({

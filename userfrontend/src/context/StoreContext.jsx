@@ -8,7 +8,7 @@ const StoreContextProvider = (props) => {
   const [food_list, setFoodList] = useState([]);
 
   const [token, setToken] = useState("");  // ✅ moved inside the component
-  const url = "http://localhost:4000";     // ✅ keep this outside or inside — both are fine
+  const url = "hhttps://foodprep-mernfull-project-backend.onrender.com";     // ✅ keep this outside or inside — both are fine
   const fetchFoodList = async () => {
   const response = await axios.get(url + '/api/food/list');
   setFoodList(response.data.data);
@@ -109,7 +109,7 @@ const StoreContextProvider = (props) => {
   const [cartitems, setcartitems] = useState({});
   const [food_list, setFoodList] = useState([]);
   const [token, setToken] = useState("");
-  const url = "https://foodprep-lm5n.onrender.com";
+  const url = "https://foodprep-mernfull-project-backend.onrender.com";
 
   const fetchFoodList = async () => {
     const response = await axios.get(url + '/api/food/list');
